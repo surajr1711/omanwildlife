@@ -1,0 +1,25 @@
+.gallery {
+  background-image: url('../../images/gallery-bg.png');
+  background-position: top;
+  text-align: center;
+  padding: 145px 0;
+  position: relative;
+  top: -160px;
+  z-index: 10;
+  h2 {
+    font-size: 60px;
+    color: #f5ca72;
+  }
+  p {
+    font-size: 30px;
+    color: white;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
+  img {
+    margin-top: 30px;
+    width: 100%;
+  }
+}

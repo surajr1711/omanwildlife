@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- polaroid gallery ====================== -->
+  <link rel="stylesheet" href="./styles/css/normalize.css" />
+  <link rel="stylesheet" href="./styles/css/demo.css" />
+  <link rel="stylesheet" href="./styles/css/component.css" />
+  <script src="scripts/modernizr.min.js"></script>
+  <!-- polaroid gallery ====================== -->
+  
+  <link rel="stylesheet" href="./styles/css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Roboto&display=swap" rel="stylesheet">
+  <script
+  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <title>Eastern Compass</title>
+</head>
+<body>
+
+  <div class="loading"></div>
+
+  <div class="slideshow">
+    <img src="./images/slide1.jpg" alt="">
+    <img src="./images/slide2.jpg" alt="">
+    <img src="./images/slide3.jpg" alt="">
+  </div>
+
+  <div class="body-wrapper">
+      
+      <header>
+        <div class="container">
+    
+          <ul class="contact">
+            <li><a href="tel:+96812345678">
+              <img src="./images/icon-tel.png">
+              <span>+968-123-45678</span>
+            </a></li>
+            <li><a href="mailto:info@easterncompass.com">
+              <img src="./images/icon-mail.png">
+              <span>info@easterncompass.com</span>
+            </a></li>
+          </ul>
+    
+          <div class="brand">
+            <img src="./images/logo.png" alt="Eastern Compass logo">
+          </div>
+    
+          <nav>
+            <button class="burger">
+              <div class="line-wrapper">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+              </div>
+            </button>
+            <ul class="menu">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#plan">Plan</a></li>
+              <li><a href="#updates">Updates</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#testimonials">Testimonials</a></li>
+              <li><a href="#sitemap">Sitemap</a></li>
+            </ul>
+          </nav>
+    
+        </div>  
+      </header>
+    
+    
+      
+      <main class="activities">
+        <div class="container">
+          
+          <div class="glider-contain multiple">
+    
+            <div class="glider">
+              <div><h2>Wildlife programs</h2></div>
+              <div><h2>Bird-watching programs</h2></div>
+              <div><h2>Tourism excursions</h2></div>
+              <div><h2>Tourism programs</h2></div>  
+              <div><h2>Wildlife programs</h2></div>
+              <div><h2>Bird-watching programs</h2></div>
+              <div><h2>Tourism excursions</h2></div>
+              <div><h2>Tourism programs</h2></div>  
+            </div>
+    
+            <div class="glider-dots"></div>
+    
+          </div>
+    
+        </div>
+      </main>
+    
+    
+    
+      <section class="welcome">
+        <div class="container">
+          <h1>Welcome to Eastern Compass</h1>
+          <h2>First company specialist in <span>wildlife</span> in middle east.</h2>
+          <p>Tell us your interests and how you'd like to travel, and our specialists will design your trip around them. Breathtaking landscapes, natural treasures, captivating stories, unforgettable experiences.</p>
+    
+          <button class="expand-button">
+            <div class="line-wrapper">
+              <div class="horizontal"></div>
+              <div class="vertical"></div>
+            </div>
+          </button>
+          
+          <div class="expand-area"></div>
+        </div>
+      </section>
+    
+    
+    
+      <section class="plan">
+        <div class="container">
+          <img class= "traveler" src="./images/traveler.png" alt="Traveler in red shirt, hat and khaki shorts holding up his passport">
+          <div class="plan-content">
+            <h2>Plan your trip</h2>
+            <p>Use the trip planning tool below to find a place to stay and lodging packages. If you would like to learn more, take a look at our <span>Places to Stay</span> page or <span>Contact us</span>.</p>
+    
+            <div class="check">
+              <div class="tabbuttons-wrapper">
+                <button class="tabbutton active" data-tabname="accomodation">
+                  <img src="./images/icon-accomodation.png" alt="">
+                  <span>Accomodation</span>
+                </button>
+                <button class="tabbutton" data-tabname="packages">
+                  <img src="./images/icon-packages.png" alt="">
+                  <span>Packages</span>
+                </button>
+              </div>
+    
+              <div class="tabcontent-wrapper">
+                <form action="" class="tabcontent active"data-tabname="accomodation">
+                  <input type="text" onfocus="(this.type='date')" onblur="(this.type='text')" name="" id="trip-start" placeholder="Trip start">
+                  <input type="text" onfocus="(this.type='date')" onblur="(this.type='text')" name="" id="trip-end" placeholder="Trip end">
+                  <select name="" id="acc-type" placeholder="Accomodation type">
+                    <option value="" disabled selected>Accomodation type</option>
+                    <option value="1">Type 1</option>
+                    <option value="2">Type 2</option>
+                    <option value="3">Type 3</option>
+                  </select>
+                  <button>Check availability</button>
+                </form>
+    
+                <form action="" class="tabcontent" data-tabname="packages">
+                  <input type="text" placeholder="First name">
+                  <input type="text" placeholder="Last name">
+                  <select placeholder="Package">
+                    <option value="" disabled selected>Package type</option>
+                    <option value="1">Single</option>
+                    <option value="2">Double</option>
+                    <option value="3">Family</option>
+                  </select>
+                  <button>Check price</button>
+                </form>
+              </div>
+            </div>
+    
+          </div>
+        </div>
+      </section>
+    
+    
+    
+      <section class="updates">
+        <div class="container">
+         
+          <h2>Latest updates</h2>
+          <p>All the latest trip reports, breaking news, offers and goodies.</p>
+         
+          <div class="glider-contain multiple">
+            
+            <div class="glider">
+              <div class="update-card">
+                <img src="./images/update-layer-177.jpg" alt="">
+                <div class="card-text">
+                  <div class="card-title">
+                    <h3>Guiding the guides -</h3>
+                    <small>February 23, 2018</small>
+                  </div>
+                  <div class="card-desc">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, odio! Soluta suscipit eos, eum nobis odit quo veniam animi autem labore ad, sunt error.</p>
+                    <a href="">read more</a>
+                  </div>
+                </div>
+              </div>
+              <div class="update-card">
+                <img src="./images/update-layer-178.jpg" alt="">
+                <div class="card-text">
+                  <div class="card-title">
+                    <h3>Guiding the guides -</h3>
+                    <small>February 23, 2018</small>
+                  </div>
+                  <div class="card-desc">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, odio! Soluta suscipit eos, eum nobis odit quo veniam animi autem labore ad, sunt error.</p>
+                    <a href="">read more</a>
+                  </div>
+                </div>
+              </div>
+              <div class="update-card">
+                <img src="./images/update-layer-179.jpg" alt="">
+                <div class="card-text">
+                  <div class="card-title">
+                    <h3>Guiding the guides -</h3>
+                    <small>February 23, 2018</small>
+                  </div>
+                  <div class="card-desc">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, odio! Soluta suscipit eos, eum nobis odit quo veniam animi autem labore ad, sunt error.</p>
+                    <a href="">read more</a>
+                  </div>
+                </div>
+              </div>
+              <div class="update-card">
+                <img src="./images/update-layer-180.jpg" alt="">
+                <div class="card-text">
+                  <div class="card-title">
+                    <h3>Guiding the guides -</h3>
+                    <small>February 23, 2018</small>
+                  </div>
+                  <div class="card-desc">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, odio! Soluta suscipit eos, eum nobis odit quo veniam animi autem labore ad, sunt error.</p>
+                    <a href="">read more</a>
+                  </div>
+                </div>
+              </div>
+              <div class="update-card">
+                <img src="./images/update-layer-70.jpg" alt="">
+                <div class="card-text">
+                  <div class="card-title">
+                    <h3>Guiding the guides -</h3>
+                    <small>February 23, 2018</small>
+                  </div>
+                  <div class="card-desc">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, odio! Soluta suscipit eos, eum nobis odit quo veniam animi autem labore ad, sunt error.</p>
+                    <a href="">read more</a>
+                  </div>
+                </div>
+              </div>
+              <div class="update-card">
+                <img src="./images/update-layer-71.jpg" alt="">
+                <div class="card-text">
+                  <div class="card-title">
+                    <h3>Guiding the guides -</h3>
+                    <small>February 23, 2018</small>
+                  </div>
+                  <div class="card-desc">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, odio! Soluta suscipit eos, eum nobis odit quo veniam animi autem labore ad, sunt error.</p>
+                    <a href="">read more</a>
+                  </div>
+                </div>
+              </div>
+              <div class="update-card">
+                <img src="./images/update-layer-72.jpg" alt="">
+                <div class="card-text">
+                  <div class="card-title">
+                    <h3>Guiding the guides -</h3>
+                    <small>February 23, 2018</small>
+                  </div>
+                  <div class="card-desc">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, odio! Soluta suscipit eos, eum nobis odit quo veniam animi autem labore ad, sunt error.</p>
+                    <a href="">read more</a>
+                  </div>
+                </div>
+              </div>
+              <div class="update-card">
+                <img src="./images/update-layer-73.jpg" alt="">
+                <div class="card-text">
+                  <div class="card-title">
+                    <h3>Guiding the guides -</h3>
+                    <small>February 23, 2018</small>
+                  </div>
+                  <div class="card-desc">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, odio! Soluta suscipit eos, eum nobis odit quo veniam animi autem labore ad, sunt error.</p>
+                    <a href="">read more</a>
+                  </div>
+                </div>
+              </div>
+              <div class="update-card">
+                <img src="./images/update-layer-71.jpg" alt="">
+                <div class="card-text">
+                  <div class="card-title">
+                    <h3>Guiding the guides -</h3>
+                    <small>February 23, 2018</small>
+                  </div>
+                  <div class="card-desc">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, odio! Soluta suscipit eos, eum nobis odit quo veniam animi autem labore ad, sunt error.</p>
+                    <a href="">read more</a>
+                  </div>
+                </div>
+              </div>
+              <div class="update-card">
+                <img src="./images/update-layer-180.jpg" alt="">
+                <div class="card-text">
+                  <div class="card-title">
+                    <h3>Guiding the guides -</h3>
+                    <small>February 23, 2018</small>
+                  </div>
+                  <div class="card-desc">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, odio! Soluta suscipit eos, eum nobis odit quo veniam animi autem labore ad, sunt error.</p>
+                    <a href="">read more</a>
+                  </div>
+                </div>
+              </div>
+              <div class="update-card">
+                <img src="./images/update-layer-70.jpg" alt="">
+                <div class="card-text">
+                  <div class="card-title">
+                    <h3>Guiding the guides -</h3>
+                    <small>February 23, 2018</small>
+                  </div>
+                  <div class="card-desc">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, odio! Soluta suscipit eos, eum nobis odit quo veniam animi autem labore ad, sunt error.</p>
+                    <a href="">read more</a>
+                  </div>
+                </div>
+              </div>
+              <div class="update-card">
+                <img src="./images/update-layer-178.jpg" alt="">
+                <div class="card-text">
+                  <div class="card-title">
+                    <h3>Guiding the guides -</h3>
+                    <small>February 23, 2018</small>
+                  </div>
+                  <div class="card-desc">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, odio! Soluta suscipit eos, eum nobis odit quo veniam animi autem labore ad, sunt error.</p>
+                    <a href="">read more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="glider-dots"></div>
+          </div>
+        
+        </div>
+      </section>
+  
+  
+    
+      <section class="gallery"> 
+        <h2>Wildlife attractions</h2>
+        <p>Tell us your interests and how you'd like to travel, and our specialists will design your trip around them.</p>
+        
+        <div id="photostack-1" class="photostack photostack-start">
+          <div>
+            <figure>
+              <a href="#" class="photostack-img"><img src="./images/gallery1.jpg" alt="img01"/></a>
+            </figure>
+            <figure>
+              <a href="#" class="photostack-img"><img src="./images/gallery2.jpg" alt="img02"/></a>
+            </figure>
+            <figure>
+              <a href="#" class="photostack-img"><img src="./images/gallery3.jpg" alt="img03"/></a>
+            </figure>
+            <figure>
+              <a href="#" class="photostack-img"><img src="./images/gallery4.jpg" alt="img04"/></a>
+            </figure>
+            <figure>
+              <a href="#" class="photostack-img"><img src="./images/gallery5.jpg" alt="img05"/></a>
+            </figure>
+            <figure>
+              <a href="#" class="photostack-img"><img src="./images/gallery6.jpg" alt="img06"/></a>
+            </figure>
+            <figure>
+              <a href="#" class="photostack-img"><img src="./images/gallery7.jpg" alt="img07"/></a>
+            </figure>
+            <figure>
+              <a href="#" class="photostack-img"><img src="./images/gallery8.jpg" alt="img08"/></a>
+            </figure>
+            <figure>
+              <a href="#" class="photostack-img"><img src="./images/gallery9.jpg" alt="img09"/></a>
+            </figure>
+            <figure>
+              <a href="#" class="photostack-img"><img src="./images/gallery10.jpg" alt="img10"/></a>
+            </figure>
+            <figure>
+              <a href="#" class="photostack-img"><img src="./images/gallery11.jpg" alt="img11"/></a>
+            </figure>
+            <figure>
+              <a href="#" class="photostack-img"><img src="./images/gallery12.jpg" alt="img12"/></a>
+            </figure>
+            <figure>
+              <a href="#" class="photostack-img"><img src="./images/gallery13.jpg" alt="img13"/></a>
+            </figure>
+            <figure>
+              <a href="#" class="photostack-img"><img src="./images/gallery14.jpg" alt="img14"/></a>
+            </figure>
+            <figure>
+              <a href="#" class="photostack-img"><img src="./images/gallery15.jpg" alt="img15"/></a>
+            </figure>
+            <figure>
+              <a href="#" class="photostack-img"><img src="./images/gallery16.jpg" alt="img16"/></a>
+            </figure>
+          </div>
+        </div>
+        
+      </section>
+    
+      <div class="white-bg-fill"></div>
+    
+      <footer>
+        <div class="container">
+    
+          <section class="testimonials">
+            <div class="glider-contain multiple">
+              
+              <div class="glider">
+                <div class="testimonial">
+                  <img class="profile" src="./images/tourist-1.jpg" alt="Tourist profile picture 1">
+                  <div class="tm-text">
+                    <h2>testimonials</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit rem dolorum ab, eos provident nesciunt sit. Minima nulla, exercitationem consectetur omnis harum soluta odit ab illum sapiente at unde officia?</p>
+                    <p>Tourist name</p>
+                  </div>
+                </div>
+                <div class="testimonial">
+                  <img class="profile" src="./images/tourist-1.jpg" alt="Tourist profile picture 1">
+                  <div class="tm-text">
+                    <h2>testimonials</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit rem dolorum ab, eos provident nesciunt sit. Minima nulla, exercitationem consectetur omnis harum soluta odit ab illum sapiente at unde officia?</p>
+                    <p>Tourist name</p>
+                  </div>
+                </div>
+                <div class="testimonial">
+                  <img class="profile" src="./images/tourist-1.jpg" alt="Tourist profile picture 1">
+                  <div class="tm-text">
+                    <h2>testimonials</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit rem dolorum ab, eos provident nesciunt sit. Minima nulla, exercitationem consectetur omnis harum soluta odit ab illum sapiente at unde officia?</p>
+                    <p>Tourist name</p>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="glider-dots"></div>
+            </div>
+          </section>
+    
+
+
+
+          <section class="sitemap">
+            <div class="areas trip-planning">
+              <h3>Trip planning</h3>
+              <ul>
+                <li><a href="#">Places to stay</a></li>
+                <li><a href="#">Things to do</a></li>
+                <li><a href="#">Trecking</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Easterncompass F.A.Q.</a></li>
+                <li><a href="#">Planning for weather</a></li>
+              </ul>
+            </div>
+            <div class="areas about-us">
+              <h3>About us</h3>
+              <ul>
+                <li><a href="#">Places to stay</a></li>
+                <li><a href="#">Things to do</a></li>
+                <li><a href="#">Trecking</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Easterncompass F.A.Q.</a></li>
+                <li><a href="#">Planning for weather</a></li>
+              </ul>
+            </div>
+            <div class="areas what-we-offer">
+              <h3>What we offer</h3>
+              <ul>
+                <li><a href="#">Wildlife programs</a></li>
+                <li><a href="#">Bird-watching programs</a></li>
+                <li><a href="#">Tourism excursions</a></li>
+                <li><a href="#">Tourism programs</a></li>
+              </ul>
+            </div>
+            <div class="areas social">
+              <a href="#" title="Facebook"></a>
+              <a href="#" title="Twitter"></a>
+              <a href="#" title="Pinterest"></a>
+              <a href="#" title="Instagram"></a>
+            </div>
+            <div class="areas contact-links">
+              <h3>Contact</h3>
+              <ul>
+                <li><address>Sultanate of Oman, Salalah, 211</address></li>
+                <li><a href="tel:+96812345678">M: +968 123 4567</a></li>
+                <li><a href="mailto:info@easterncompass.com">E: info@easterncompass.com</a></li>
+              </ul>
+            </div>
+            <div class="areas endorsed">
+              <h3>Endorsed by</h3>
+              <div>
+                <img src="./images/logo-orascom.png" alt="Logo of Orascom Hotel Management">
+              </div>
+            </div>
+            <div class="areas legal">
+              <h2>Easterncompass</h2>
+              <ul>
+                <li><a href="#">Privacy policy</a></li>
+                <li><a href="#">Terms and conditions</a></li>
+                <li><a href="#">Business directory</a></li>
+                <li><a href="#">Manage your cookies</a></li>
+              </ul>
+            </div>
+            <div class="areas rights">
+                <small>&copy; 2018 easterncompass.com. All rights reserved.</small>
+            </div>
+          </section>
+    
+        </div>
+      </footer>
+
+
+  </div> <!-- end of body-wrapper div -->
+  
+
+  <script src="./scripts/glider.min.js"></script>
+
+  <!-- polaroid galleryt -->
+  <script src="./scripts/classie.js"></script>
+  <script src="./scripts/photostack.js"></script>
+  <!-- poloaroid gallery -->
+  
+  <script src="./scripts/main.js"></script>
+
+</body>
+</html>

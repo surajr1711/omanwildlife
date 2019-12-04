@@ -1,0 +1,279 @@
+// ==================================================
+// FOOTER 
+// ==================================================
+
+footer {
+  // padding-top: 100px;
+  height: 1241px;
+  background: linear-gradient(0deg,rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 80%), url('../../images/sitemap-layer-183.png') center/cover;
+  // position: relative;
+  // top: -160px;
+  // .dots-wrapper {
+  //   position: static;
+  //   text-align: left;
+  //   margin-top: 50px;
+  // }
+}
+
+// quick-fix to cover gap between gallery and footer. gap happens because background image pngs of previous sections should connect so sections were set to position relative and pushed up.
+.white-bg-fill {
+  width: 100%;
+  height: 1000px;
+  background: white;
+  position: absolute;
+  bottom: 1200px;
+}
+
+// @media screen and (max-width: 768px) {
+//   .white-bg-fill {
+//     bottom: 1350px;
+//   }
+// }
+// ==================================================
+// TESTIMONIALS 
+// ==================================================
+
+.trip-planning { grid-area: trip-planning; }
+.about-us { grid-area: about-us; }
+.what-we-offer { grid-area: what-we-offer; }
+.social { grid-area: social; }
+.contact-links { grid-area: contact-links; }
+.endorsed { grid-area: endorsed; }
+.legal { grid-area: legal; }
+.rights { grid-area: rights; }
+
+.testimonials {
+  .glider-dots {
+    width: 100px;
+    margin-left: 410px;
+    display: block;
+  }
+}
+.testimonial {
+  display: flex;
+  padding: 40px;
+  // flex: 1340px 0 0;
+  // flex: 100% 0 0;
+}
+.profile {
+  width: 277px;
+  height: 277px;
+  display: block;
+  border: 10px solid white;
+  border-radius: 100%;
+  margin-right: 100px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.tm-text {
+  // width: 850px;
+  width: 100%;
+  h2 {
+    font-size: 40px;
+    text-transform: capitalize;
+  }
+  p {
+    margin-top: 40px;
+    font-size: 22px;
+  }
+  p:last-of-type {
+    font-weight: bold;
+  }
+}
+
+// media queries
+@media screen and (max-width: 1024px) {
+  .testimonials {
+    .profile {
+      margin-right: 40px;
+    }
+    .glider-dots {
+      margin-left: 350px;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .testimonials {
+    .profile {
+      width: 200px;
+      height: 200px;
+    }
+    .glider-dots {
+      margin-left: 280px;
+    }
+  }
+}
+@media screen and (max-width: 620px) {
+  .testimonials {
+    .glider-dots {
+      margin: auto;
+    }
+    .profile {
+      margin: auto;
+      // margin-right: auto;
+      // margin-left: auto;
+    }
+  }
+  .testimonial {
+    display: block;
+    text-align: center;
+  }
+}
+// ==================================================
+// SITEMAP 
+// ==================================================
+
+// .trip-planning { grid-area: trip-planning; }
+// .about-us { grid-area: about-us; }
+// .what-we-offer { grid-area: what-we-offer; }
+// .social { grid-area: social; }
+// .contact-links { grid-area: contact-links; }
+// .endorsed { grid-area: endorsed; }
+// .legal { grid-area: legal; }
+// .rights { grid-area: rights; }
+
+.sitemap {
+  margin-top: 340px;
+  padding-bottom: 20px;
+  display: grid;
+  // grid-template-columns: repeat(5, 1fr);
+  grid-template-areas: 
+  "trip-planning about-us what-we-offer . social"
+  "contact-links contact-links contact-links . endorsed"
+  "legal legal legal legal rights";
+}
+
+
+.areas {
+  margin-top: 30px;
+  h3 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #eaa347;
+    margin-bottom: 20px;
+  }
+  ul {
+    list-style-type: none;
+  }
+  li {
+    margin-top: 10px;
+  }
+  a, li, address {
+    display: block;
+    // width: 150px;
+    color: white;
+    margin-right: 20px;
+  }
+}
+.endorsed {
+  img { width: 60%; }
+}
+.social {
+  background: url('../../images/icon-social.png');
+  background-repeat: no-repeat;
+  width: 180px;
+  height: 45px;
+  display: flex;
+  a {
+    width: 45px;
+    height: 45px;
+  }
+}
+.contact-links ul {
+  display: flex;
+  flex-wrap: wrap;
+  li, a {
+    width: auto;
+    margin-right: 20px;
+  }
+}
+.legal {
+  h2 {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: white;
+    margin-bottom: 10px;
+  }
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    a { font-style: italic; }
+  }
+}
+.rights {
+  align-self: end;
+  small {
+    margin-top: 30px;
+    font-size: 14px;
+    color: white;
+  }
+}
+
+// media queries
+@media screen and (max-width: 1440px){
+  .sitemap {
+    margin-top: 330px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  footer {
+    height: auto;
+  }
+  .sitemap {
+    margin-top: 215px;
+    grid-template-areas: 
+    "trip-planning about-us what-we-offer"
+    "contact-links social endorsed"
+    "legal legal legal"
+    "rights rights rights";
+  }
+  .contact-links ul {
+    display: block;
+  }
+}
+@media screen and (max-width: 768px) {
+  .sitemap {
+    margin-top: 60px;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+    "trip-planning about-us"
+    "what-we-offer contact-links"
+    "social endorsed"
+    "legal legal"
+    "rights rights";
+  }
+  // .legal {
+  //   h2 {
+  //     text-align: center;
+  //   }
+  //   ul {
+  //     justify-content: center;
+  //   }
+  // }
+  // .rights {
+  //   text-align: center;
+  // }
+}
+// @media screen and (max-width: 320px)
+// @media screen and (max-width: 620px) {
+//   .sitemap {
+//     // grid-template-columns: 50% 50%;
+//     grid-template-areas: 
+//     "trip-planning about-us"
+//     "what-we-offer contact-links"
+//     "social social"
+//     "endorsed endorsed"
+//     "legal legal"
+//     "rights rights";
+//   }
+// }
+// @media screen and (max-width: 425px) {
+//   .sitemap {
+//     grid-template-areas: 
+//     "trip-planning about-us"
+//     "what-we-offer contact-links"
+//     "social social"
+//     "endorsed endorsed"
+//     "legal legal"
+//     "rights rights";
+//   }
+// }

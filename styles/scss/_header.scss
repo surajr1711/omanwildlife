@@ -1,0 +1,146 @@
+header {
+  height: calc(100vh + 200px);
+  background: linear-gradient(180deg,rgba(0,0,0,0.9) 0%, rgba(0, 0, 0, 0) 30%);
+  > .container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+}
+
+
+// contact section
+.contact {
+  flex: 0 1 33%;
+  display: flex;
+  margin-top: 50px;
+  li {
+    list-style-type: none;
+    height: 50px;
+  }
+  li:first-child {
+    margin-right: 2rem;
+  }
+  a {
+    color: #ffffff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    img {
+      margin-right: 1rem;
+    }
+  }
+}
+
+
+// company logo
+.brand {
+  margin-top: 20px;
+  flex: 0 1 34%;
+}
+
+
+// navigation
+nav {
+  margin-top: 50px;
+  flex: 0 1 33%;
+}
+nav:hover .menu {
+  visibility: visible;
+}
+.burger {
+  height: 70px;
+  width: 70px;
+  background-color: #a8750d;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  margin-right: 0;
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  & * {
+    pointer-events: none;
+  }
+}
+.burger:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22); 
+}
+.line1, .line2, .line3 {
+  width: 30px;
+  height: 2px;
+  background-color: white;
+}
+.line2 {
+  width: 20px;
+  margin: 10px 0 10px auto;
+}
+.menu {
+  visibility: hidden;
+  list-style-type: none;
+  width: 200px;
+  margin-right: 20px;
+  margin-left: auto;
+  margin-top: 20px;
+  li {
+    margin-top: 5px;
+  }
+  a {
+    padding: 8px;
+    background: #f3ebdb;
+    display: block;
+    width: 200px;
+    font-size: 18px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  }
+  a:hover {
+    transform: translateX(-5px);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22); 
+  }
+}
+
+
+@media screen and (max-width: 1440px) {
+  header {
+    .contact {
+      flex-wrap: wrap;
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  header {
+    .container {
+      flex-direction: column;
+      align-items: stretch;
+      position: relative;
+    }
+    .contact {
+      order: 2;
+      justify-content: space-around;
+    }
+    .brand {
+      order: 1;
+      text-align: center;
+    }
+    nav {
+      position: absolute;
+      right: 10px;
+    }
+  }
+}
+@media screen and (max-width: 425px) {
+  .contact {
+    display: block;
+    li {
+      margin-top: 10px;
+    }
+  }
+  .brand img{
+    max-width: 100%;
+  }
+}
